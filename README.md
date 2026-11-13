@@ -5,7 +5,7 @@ Prediction of Hemolytic Potency (HC50) of Chemically Modified Peptides
 ---
 
 ## 📚 Reference
-Coming soon... 
+**Rathore AS et al.** _HemoPI-MOD2: Prediction of Hemolytic Potency (HC50) of Chemically Modified Peptides._ **#Coming Soon#**
 
 ---
 ## 📌 Introduction
