@@ -1,0 +1,4 @@
+>peptide_sample_1
+CC(C)CC(NC(=O)C(CC(C)C)NC(=O)CNC(=O)C(C)NC(=O)C(CC(C)C)N)C(=O)O
+>peptide_sample_2
+CC(C)C(NC(=O)C(Cc1ccccc1)NC(=O)C(C)N)C(=O)O

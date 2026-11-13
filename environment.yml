@@ -1,0 +1,17 @@
+name: HemoPI-MOD2
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - scipy
+  - joblib=1.4.2
+  - scikit-learn=1.6.1
+  - rdkit
+  - networkx=2.8.8
+  - pip
+  - pip:
+      - xgboost==3.2.0
+      - mordred==1.2.0

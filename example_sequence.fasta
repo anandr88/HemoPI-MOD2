@@ -1,0 +1,10 @@
+>peptide_1_unmodified
+GIGKFLHSAKKFGKAFVGEIMNS
+>peptide_2_nterm_acetyl
+{nt:Acet}KWKLFKKIGAVLKVL
+>peptide_3_cterm_amide
+KWKLFKKIGAVLKVL{ct:Amid}
+>peptide_4_head_to_tail_cyclic
+{cyc:N-C}GLLSVLGSVAKHVLPHVVPVIAEHL
+>peptide_5_d_residues
+KL{d}AL{d}KLKKLL

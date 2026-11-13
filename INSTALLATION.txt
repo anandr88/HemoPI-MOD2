@@ -1,0 +1,77 @@
+# 🛠️ Installation Guide for HemoPI-MOD2
+
+## 🔹 Standalone Installation
+
+HemoPI-MOD2 is written in **Python 3** and requires the following
+dependencies:
+
+### ✅ Required Libraries
+
+```bash
+python>=3.9
+```
+
+Core packages, needed by every model:
+
+```bash
+pip install scikit-learn==1.6.1
+pip install xgboost==3.2.0
+pip install "numpy>=1.23,<2.0"
+pip install pandas
+pip install joblib
+pip install scipy
+```
+
+Needed only for the Chemical (-m 2) and Structure (-m 3) models:
+
+```bash
+pip install rdkit
+pip install mordred==1.2.0
+pip install "networkx>=2.8,<3.0"
+```
+
+Or install everything at once:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🔹 Installation using environment.yml
+
+1. Create a new Conda environment:
+```bash
+conda env create -f environment.yml
+```
+2. Activate the environment:
+```bash
+conda activate HemoPI-MOD2
+```
+
+## ⚠️ Important Note-1
+
+- scikit-learn and xgboost are PINNED on purpose. The three model files in
+  models/ were fitted with scikit-learn 1.6.1, and chemical_model.pkl holds a
+  serialized XGBoost regressor. Loading either under a different version
+  prints a version warning and is not guaranteed to reproduce the published
+  numbers.
+
+## ⚠️ Important Note-2
+
+- The model files ship inside this package, in the models/ directory. Nothing
+  needs to be downloaded or extracted.
+- The Sequence model (-m 1) and the Design module (-j 2) run without RDKit and
+  Mordred. Install those two only if you need the Chemical or Structure model.
+
+## 🔹 Checking the installation
+
+```bash
+python HemoPI_MOD2.py -h
+python HemoPI_MOD2.py -i example_sequence.fasta -o output.csv
+```
+
+The second command should print a table of five peptides with their predicted
+HC50 values and write output.csv.
+
+---
+
+🚀 **You are now ready to use HemoPI-MOD2!**
